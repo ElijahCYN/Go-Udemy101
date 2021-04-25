@@ -1,13 +1,12 @@
 package main
 
-import "fmt"
+func main() {
+	cards := deck{"One of Diamond", variableTest()}
+	cards = append(cards, "Six of Diamonds")
 
-var card string
+	cardNum := num{1, 2, 3}
+	cardNum = append(cardNum, 4)
 
-func main()  {
-	//var card string = "Ace of Spades"
-	//card := "Ace of Spades"
-	card = "Five of Diamonds"
-
-	fmt.Println(card)
+	cards.print()
+	cardNum.printNum()
 }
